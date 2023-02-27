@@ -1,0 +1,97 @@
+<!-- HTMLの最新バージョンであることを示す -->
+<!DOCTYPE html>
+
+<!-- jaは日本語の言語コードを表示している -->
+<html lang="ja">
+
+<!-- htmlの次なのでheadになる -->
+<!-- headの内容がタイトルになる -->
+<head>
+    <!-- 言語の統一文字コードを示している -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- タイトルとなる文字（アルファベットなので先頭は山かっこを先に入力） -->
+    <title>WebDesign</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- CSSのリセット<link>タグ -->
+    <!-- その下にHTMLのCSSリンクさせるタグを設定してる。 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- タイトルの終わりのタグは先頭の山かっこを入力してから -->
+</head>
+<!-- headの次はbodyがくる -->
+<body id="top">
+    <!-- ①タグのグループ化を設定<div>タグ -->
+    <!-- ②<div>の後ろに属性をつける -->
+    <!-- ③属性＝class -->
+    <!-- ④divタグの””には名前をつける -->
+    <!-- クラス名がついてる -->
+    <div class="container">
+        <header>
+            <!-- サイト名はｈ１で囲む（大見出し） -->
+
+            <h1><a href="#">WebDesign</a></h1>
+        </header>
+
+        <!-- メニューリストの始まりなのでulタグが入る -->
+        <nav>
+            <ul>
+                <!-- メニューはリストul-liタグで使う -->
+                <!-- リストの中身なのでliタグが入る -->
+
+                <!-- 画像貼るワードをタグでかこんでalt＋wでaを入力する -->
+                <!-- ””（ダブルクォーテーション）の真ん中にカーソルを合わせ、ctrl＋spaceでファイル選択[img]→enter -->
+                <!-- imageファイルから選択→enter -->
+                <!-- HOMEだけ太字にするのにclassを設定する。 -->
+                <li><a href="index.html" class="active">HOME</a></li>
+                <!-- [#]はファイルをあとで選択する場合 -->
+                <li><a href="next.html">下層ページの構成</a></li>
+                <li><a href="contact.html">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+        <!-- メニューリストの終わりなのでuiタグ -->
+        <!-- ［メインビジュアル］ -->
+        <!-- クラス名がついてる -->
+        <p class="visual"><img src="img/web.jpg" alt="Webページ制作言語"></p>
+
+
+        <main>
+            <!-- 小見出しなのでｈ2 -->
+            <section>
+                <h2>TOPページの見出し</h2>
+                <!-- 文章で段落なのでpタグ -->
+                <p>
+                    TOPページの大見出し（h1）はサ
+                    イト名に設定するので、mainタグ内は中見出し（h2）から使い始める。
+                </p>
+            </section>
+            <!-- 小見出しなのでｈ2-->
+            <section>
+                <h2>セクションとは</h2>
+                <p>見出しとその内容は、sectionタグでグループ化する。小見出しがある場合、中見出し（h2）のsectionの中に小見出し（h3）のsectionが入ることもある。</p>
+            </section>
+            <aside>
+                <p>バナーや注意書きなどの補足情報はasideで囲む。</p>
+            </aside>
+        </main>
+    </div>
+    <footer>
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" height="32" alt="ページトップへ"></a></p>
+        <!-- 画像サイズを画像タグ内に指定する -->
+        <!-- 最初のページにリンクするようにした -->
+
+
+        <p class="copyright">
+            <small>
+                &copy;2021 WebDesign.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+    </footer>
+</body>
+<!-- bodyの終わり -->
+</html>
+<!-- htmlの終わり -->

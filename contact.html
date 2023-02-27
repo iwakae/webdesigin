@@ -1,0 +1,151 @@
+<!-- HTMLの最新バージョンであることを示す -->
+<!DOCTYPE html>
+
+<!-- jaは日本語の言語コードを表示している -->
+<html lang="ja">
+
+<!-- htmlの次なのでheadになる -->
+<!-- headの内容がタイトルになる -->
+<head>
+    <!-- 言語の統一文字コードを示している -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- タイトルとなる文字（アルファベットなので先頭は山かっこを先に入力） -->
+    <title>お問い合わせ - WebDesign</title>
+    <link rel="icon" href="img/favicon.png" type="image/png">
+    <link rel="apple-touch-icon" href="img/favicon.png">
+
+    <!-- CSSのリセット<link>タグ -->
+    <!-- その下にHTMLのCSSリンクさせるタグを設定してる。 -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/cotact.css">
+    <!-- リンク先を変更する。"css/next.css"にする。 -->
+    <!-- タイトルの終わりのタグは先頭の山かっこを入力してから -->
+
+</head>
+<!-- headの次はbodyがくる -->
+<body id="top">
+    <!-- idはページトップのリンク先にするための指定 -->
+    <!-- ①タグのグループ化を設定<div>タグ -->
+    <!-- ②<div>の後ろに属性をつける -->
+    <!-- ③属性＝class -->
+    <!-- ④divタグの””には名前をつける -->
+    <!-- クラス名がついてる -->
+    <div class="container">
+        <header>
+            <!-- サイト名はｈ１で囲む（大見出し） -->
+
+            <h1><a href="#">WebDesign</a></h1>
+
+        </header>
+        <!-- メニューリストの始まりなのでulタグが入る -->
+        <nav>
+            <ul>
+                <!-- メニューはリストul-liタグで使う -->
+                <!-- リストの中身なのでliタグが入る -->
+
+                <!-- 画像貼るワードをタグでかこんでalt＋wでaを入力する -->
+                <!-- ””（ダブルクォーテーション）の真ん中にカーソルを合わせ、ctrl＋spaceでファイル選択[img]→enter -->
+                <!-- imageファイルから選択→enter -->
+                <!-- HOMEだけ太字にするのにclassを設定する。 -->
+                <li><a href="index.html">HOME</a></li>
+                <!-- [#]はファイルをあとで選択する場合 -->
+
+
+                <!-- リンク先を変更する。名前『next.html』 -->
+                <!-- 変更したらnext.htmlで名前をつけて保存する -->
+                <li><a href="next.html">下層ページの構成</a></li>
+                <li><a href="contact.html" class="active">お問い合わせ</a></li>
+            </ul>
+        </nav>
+
+
+        <!-- メインビジュアルを削除しておく -->
+
+        <main>
+            <!-- メインの中の要素は削除しておく -->
+            <article>
+
+                <h1>お問い合わせ</h1>
+
+                <p>WebDesignについてのご質問・ご意見は、下記フォームよりお気軽にお問い合わせください。</p>
+                <!-- 注意書きリスト -->
+                <aside>
+
+                    <ul>
+                        <li>必要事項を記入し、「送信」をクリックしてください。</li>
+                        <li>ご登録いただいた個人情報は、お問い合わせ内容の確認以外には使用いたしません。</li>
+                        <li>※は必須項目です。</li>
+                    </ul>
+                </aside>
+                <!-- お問い合わせフォーム -->
+
+                <!-- formタグとmethod属性で"post"を設定 -->
+                <form action="#" method="post">
+                    <dl>
+                        <!-- タイトル -->
+                        <div>
+                            <dt>お名前<span>※</span></dt>
+
+                            <!-- タイトル -->
+                            <!-- input textタグにplaceholder(入力例属性)とrequired(必須属性) -->
+                            <dd><input type="text" placeholder="ウェブデザ　花子" required></dd>
+                        </div>
+
+                        <div>
+                            <dt>メールアドレス<span>※</span></dt>
+                            <!-- input-emailタグにplaceholder(入力例属性)とrequired(必須属性) -->
+                            <dd><input type="email" placeholder="info@gmail.com" required></dd>
+                        </div>
+                        <div>
+                            <dt>お問い合わせの種類</dt>
+                            <dd>
+                                <!-- input radioタグは名前属性を設定しておくことで、片方しか選べなくなる -->
+                                <label>
+                                    <input type="radio" name="category" checked>
+                                    ご質問
+                                </label>
+                                <label>
+                                    <input type="radio" name="category">
+                                    お問い合わせ
+                                </label>
+                            </dd>
+                        </div>
+
+                        <div>
+                            <dt>内容</dt>
+
+                            <!-- 複数行のテキスト -->
+                            <dd><textarea></textarea></dd>
+                        </div>
+                    </dl>
+
+                    <p><button>送信</button></p>
+
+                </form>
+
+
+
+            </article>
+
+
+
+        </main>
+    </div>
+    <footer>
+        <p class="pagetop"><a href="#top"><img src="img/gotop.svg" width="32" height="32" alt="ページトップへ"></a></p>
+        <!-- 画像サイズを画像タグ内に指定する -->
+        <!-- 最初のページにリンクするようにした -->
+
+
+        <p class="copyright">
+            <small>
+                &copy;2021 WebDesign.
+                <span>All Rights Reserved.</span>
+            </small>
+        </p>
+    </footer>
+</body>
+<!-- bodyの終わり -->
+</html>
+<!-- htmlの終わり -->
